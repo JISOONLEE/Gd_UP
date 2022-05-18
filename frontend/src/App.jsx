@@ -7,6 +7,7 @@ import AddClothesContainer from './containers/dressroom/AddClothesContainer.jsx'
 import DressRoomContainer from './containers/dressroom/DressRoomContainer';
 import CodyMainContainer from './containers/dressroom/CodyMainContainer';
 import CodyContainer from './containers/dressroom/CodyContainer';
+import RecommendationContainer from './containers/recommendation/RecommendationContainer';
 import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomeContainer />} />
       <Route path="/dressroom" element={<DressRoomContainer />} />
+      <Route path="/recommendation" element={<RecommendationContainer />} />
       <Route path="/login" element={<LoginContainer />} />
       <Route path="/signup" element={<SignupContainer />} />
       <Route path="/closet" element={<ClosetContainer />} />
